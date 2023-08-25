@@ -2,4 +2,9 @@
 <div class="china">
     <h1>Đây là component home</h1>
     <p>{{name}}</p>
+    <input value="{{name}}">
+    <br>
+    <input [value]="name" title="đây là {{name}}">
+    <br>
+    <input [value]="name" [title]="'đây là ' + name">
 </div>
