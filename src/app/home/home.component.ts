@@ -9,6 +9,7 @@ export class HomeComponent implements OnInit{
 
   public name = 'Urban Legend China';
   public age = 25;
+  public contries = ['ShangHai', 'Wuhan', 'Bejing', 'Chongqing', 'Guangdong']
 
   constructor(){}
 

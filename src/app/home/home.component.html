@@ -1,11 +1,14 @@
 
 <div class="china">
     <h1>Đây là component home</h1>
-    <input type="text" [(ngModel)]="age">
+    <div *ngFor="let items of contries; let i = index">
+        <li> {{i+1}}. {{items}}</li>
+    </div>
+    <!-- <input type="text" [(ngModel)]="age">
     <h1>Tuổi của bạn là: {{age}}</h1>
     <div *ngIf="age <= 18; then tre else gia"></div>
     <ng-template #tre><h2>Bạn còn trẻ</h2></ng-template>
-    <ng-template #gia><h2>Bạn đã già</h2></ng-template>
+    <ng-template #gia><h2>Bạn đã già</h2></ng-template> -->
     <!-- <h2 *ngIf="age <= 18">Bạn còn trẻ</h2>
     <h2 *ngIf="age > 18">Bạn đã già</h2> -->
     <!-- <button (click)="resetName()">ResetName</button> -->
