@@ -7,4 +7,7 @@
     <input [value]="name" title="đây là {{name}}">
     <br>
     <input [value]="name" [title]="'đây là ' + name">
+
+    <h2 *ngIf="age > 18">Bạn lớn hơn 18</h2>
+    <h2 *ngIf="age <= 18">Bạn nhỏ hơn hoặc bằng 18</h2>
 </div>
