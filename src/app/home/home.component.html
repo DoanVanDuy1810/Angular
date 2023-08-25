@@ -1,13 +1,17 @@
 
 <div class="china">
     <h1>Đây là component home</h1>
-    <p>{{name}}</p>
-    <input value="{{name}}">
+    <input type="text" [(ngModel)]="name">
+    <h1>Hello {{name}}</h1>
+    <button (click)="resetName()">ResetName</button>
+    <!-- <input value="{{name}}">
     <br>
     <input [value]="name" title="đây là {{name}}">
     <br>
     <input [value]="name" [title]="'đây là ' + name">
 
     <h2 *ngIf="age > 18">Bạn lớn hơn 18</h2>
-    <h2 *ngIf="age <= 18">Bạn nhỏ hơn hoặc bằng 18</h2>
+    <h2 *ngIf="age <= 18">Bạn nhỏ hơn hoặc bằng 18</h2> -->
+
+
 </div>
