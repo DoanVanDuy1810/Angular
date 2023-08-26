@@ -4,3 +4,12 @@
     box-shadow: 5px 10px red;
     width: 400px;
 }
+
+.table, td, th{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.area{
+    color: red;
+}

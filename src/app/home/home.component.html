@@ -1,9 +1,8 @@
-
 <div class="china">
     <h1>Đây là component home</h1>
-    <div *ngFor="let items of contries; let i = index">
+    <!-- <div *ngFor="let items of contries; let i = index">
         <li> {{i+1}}. {{items}}</li>
-    </div>
+    </div> -->
     <!-- <input type="text" [(ngModel)]="age">
     <h1>Tuổi của bạn là: {{age}}</h1>
     <div *ngIf="age <= 18; then tre else gia"></div>
@@ -21,5 +20,21 @@
     <h2 *ngIf="age > 18">Bạn lớn hơn 18</h2>
     <h2 *ngIf="age <= 18">Bạn nhỏ hơn hoặc bằng 18</h2> -->
 
-
+    <br />
+    <table class="table">
+        <tr>
+            <th>Sort order</th> 
+            <th>Name</th>
+            <th>LandArea</th>
+            <th>Country</th>
+        </tr>
+        <tr *ngFor="let items of countries2; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{items.name}}</td>
+            <td>
+                <span [ngClass]="{'area': items.landArea < 700}">{{items.landArea}} km²</span>
+            </td>
+            <td>{{items.country}}</td>
+        </tr>
+    </table>
 </div>
